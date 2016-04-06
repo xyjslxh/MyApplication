@@ -6,12 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
-import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.MultiAutoCompleteTextView;
 import android.widget.ToggleButton;
 
 public class MainActivity extends Activity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
@@ -23,7 +19,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = (Button) findViewById(R.id.button1);
+//        Button button = (Button) findViewById(R.id.button1);
 //        button.setOnClickListener(new View.OnClickListener() {
 //        匿名内部类监听
 //            @Override
@@ -40,15 +36,15 @@ public class MainActivity extends Activity implements View.OnClickListener, Comp
 //            }
 //        });
         //接口方式监听
-        button.setOnClickListener(this);
-
-        AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextView);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, res);
-        autoCompleteTextView.setAdapter(adapter);
-
-        MultiAutoCompleteTextView multiAutoCompleteTextView = (MultiAutoCompleteTextView) findViewById(R.id.multiAutoCompleteTextView);
-        multiAutoCompleteTextView.setAdapter(adapter);
-        multiAutoCompleteTextView.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
+//        button.setOnClickListener(this);
+//
+//        AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextView);
+//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, res);
+//        autoCompleteTextView.setAdapter(adapter);
+//
+//        MultiAutoCompleteTextView multiAutoCompleteTextView = (MultiAutoCompleteTextView) findViewById(R.id.multiAutoCompleteTextView);
+//        multiAutoCompleteTextView.setAdapter(adapter);
+//        multiAutoCompleteTextView.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
 
 
         ToggleButton toggleButton = (ToggleButton) findViewById(R.id.toggleButton);
